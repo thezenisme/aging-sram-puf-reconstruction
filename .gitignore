@@ -1,0 +1,15 @@
+*.exe
+*.o
+*.log
+*.jou
+*.str
+*.pb
+*.rpx
+.Xil/
+__pycache__/
+cases/
+scale=*/
+test_results_*/
+work_*/
+*.csv.tmp
+
