@@ -8,7 +8,7 @@ folded FPGA scaling core.
 ## Requirements
 
 - GCC with OpenMP and GNU Make
-- Python 3 with NumPy
+- Python 3 with NumPy and Matplotlib
 - Vivado 2022.2 for FPGA synthesis
 
 ## Scope
@@ -21,11 +21,33 @@ original source.
 The FPGA files implement a decoder scaling core, not a complete PUF interface,
 helper-data store, system bus, or KDF.
 
-## Reproducibility
+## Quick Verification
 
-Short smoke-test configurations are provided for code inspection. The exact
-paper points may require long Monte Carlo runs. Frozen reference outputs and
-their command lines will be included in the archival release.
+The default configuration is intentionally small. From Git Bash, run:
+
+```bash
+./run_quick.sh
+```
+
+This compiles the N=256 configuration and runs at most 1000 frames per noise
+point. It checks the simulation path but is not intended to reproduce the
+paper's low-FER statistics.
+
+## Full Reproduction
+
+The N=4096 sweep uses the paper settings (`scale=2.0`, seed 12345, 50 target
+frame errors, and at most $10^7$ frames per noise point):
+
+```bash
+./run_full.sh --confirm
+```
+
+This run may require several days depending on the CPU. The confirmation flag
+prevents an accidental long run. The equivalent executable syntax is
+`scale seed target_errors max_tests max_noise`.
+
+The frozen aggregate output is in `results/main_rate12_long.csv`. Run
+`python results/plot_precomputed.py` to plot it without rerunning Monte Carlo.
 
 Matrix search is randomized. Exact numerical reproduction requires the frozen
 matrix used by the manuscript; a newly generated candidate need not be

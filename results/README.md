@@ -1,18 +1,16 @@
-# Reference Results Placeholder
+# Frozen Reference Output
 
-Only compact, manuscript-facing outputs belong here. Include one CSV per final
-figure or table, plus a command/seed manifest. Do not copy complete exploratory
-result trees or per-frame traces.
+`main_rate12_long.csv` is the compact output retained from the paper-scale
+rate-1/2, N=4096 Monte Carlo sweep. It is provided so that readers can inspect
+and plot the reported trend without repeating the multi-day simulation.
 
-Recommended files before release:
+Generate a figure from the frozen CSV with:
 
-- `main_rate12_long.csv`
-- `ablation_rate12.csv`
-- `multi_length_summary.csv`
-- `psd_acf_normalized_summary.csv`
-- `high_rate_boundary.csv`
-- `real_readout_mild_drift.csv`
-- `real_profile_mapping.csv`
-- `leakage_summary.txt`
-- `hardware_scaling_summary.csv`
+```bash
+python results/plot_precomputed.py
+```
 
+The CSV records aggregate FER and iteration statistics, not per-frame traces.
+Values printed as `0.000000` are output-resolution entries from runs governed
+by the stopping rule described in the manuscript; they are not analytic proof
+of zero failure probability.

@@ -8,7 +8,7 @@ workspace.
 
 | Manuscript claim | Public artifact |
 |---|---|
-| Rate-1/2 FER, ablation, and block-length experiments | `software/core/` |
+| Rate-1/2 FER, ablation, and block-length experiments | `software/core/` and `results/main_rate12_long.csv` |
 | Residual PSD and normalized ACF controls | `software/psd/` |
 | Rate-2/3 operating-boundary experiment | `software/high_rate/` |
 | Randomized QC/UEP matrix candidate search | `matrix_search/` |
@@ -30,7 +30,7 @@ workspace.
 
 1. Confirm that every copied source file is the frozen version used for the
    corresponding manuscript table or figure.
-2. Add small reference outputs and exact commands for each published result.
+2. Add further compact reference outputs only when required for a published figure or table.
 3. Add third-party dataset download links, versions, and checksums; do not
    redistribute data unless its license permits it.
 4. Select a software license and add citation metadata (`CITATION.cff`).

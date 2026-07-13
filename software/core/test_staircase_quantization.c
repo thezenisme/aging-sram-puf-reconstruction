@@ -376,9 +376,10 @@ int main(int argc, char *argv[]) {
     if (argc > 1) scale_value = atof(argv[1]);
 
     uint32_t base_seed = 12345u;
-    int target_errors = 50;
-    long long max_tests = 10000000;
-    double max_noise_rate = 0.15;
+    // Public-artifact defaults: finish quickly unless full-run arguments are explicit.
+    int target_errors = 5;
+    long long max_tests = 1000;
+    double max_noise_rate = 0.005;
     double single_noise_rate = -1.0;
     int sanity_only = 0;
 
