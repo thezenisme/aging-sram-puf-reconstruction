@@ -1,0 +1,4 @@
+command: gcc -std=c99 -O3 -fopenmp -DTEST_LENGTH_LONG <candidate sources> -o test_staircase_long.exe -lm -fopenmp
+cwd: <candidate>
+elapsed_seconds: 1.598
+exit_code: 0

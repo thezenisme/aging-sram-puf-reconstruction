@@ -1,0 +1,15 @@
+{
+  "seed": 7001,
+  "status": "ok",
+  "noise": 0.021,
+  "actual_ber": 0.09035,
+  "baseline_fer": 0.845095095,
+  "proposed_fer": 0.0,
+  "avg_iter": 13.11,
+  "tests": 7992,
+  "baseline_failures": 6754,
+  "proposed_failures": 0,
+  "rule3_95_ub": 0.000375375375,
+  "matrix_sha256": "dd4857d547820ba0d4ef40fc1b82c2e0133701a4939138d28d84173c8f4aec21",
+  "ber_in_target": true
+}

@@ -1,0 +1,7 @@
+{
+  "source_candidate": "..",
+  "base_shifts": "../base_shifts.csv",
+  "full_generator": true,
+  "orthogonality_random_tests": 50,
+  "screening_H_preserved": true
+}

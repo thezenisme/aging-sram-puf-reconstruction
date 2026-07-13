@@ -9,6 +9,7 @@ workspace.
 | Manuscript claim | Public artifact |
 |---|---|
 | Rate-1/2 FER, ablation, and block-length experiments | `software/core/` and `results/main_rate12_long.csv` |
+| Frozen scale-2.0 result tables and fitted curves | `results/test_results_staircase_scale_2.000/` |
 | Residual PSD and normalized ACF controls | `software/psd/` |
 | Rate-2/3 operating-boundary experiment | `software/high_rate/` |
 | Randomized QC/UEP matrix candidate search | `matrix_search/` |

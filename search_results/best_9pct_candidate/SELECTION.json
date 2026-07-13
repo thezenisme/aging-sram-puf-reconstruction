@@ -1,0 +1,19 @@
+{
+  "criterion": "minimum screened FER near 9% measured raw BER",
+  "selected_seed": 7001,
+  "screening": {
+    "actual_ber": 0.09035,
+    "tests": 7992,
+    "proposed_failures": 0,
+    "avg_iterations": 13.11
+  },
+  "confirmation": {
+    "actual_ber": 0.09036,
+    "tests": 103980,
+    "baseline_failures": 87748,
+    "proposed_failures": 3,
+    "proposed_fer": 2.88517023e-05,
+    "avg_iterations": 13.11
+  },
+  "claim_boundary": "Best retained local-search candidate; does not establish the 1e-6 empirical target."
+}

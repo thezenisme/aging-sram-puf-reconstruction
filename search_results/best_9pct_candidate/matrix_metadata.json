@@ -1,0 +1,52 @@
+{
+  "seed": 7001,
+  "construction": "base-graph PEG distance selection plus QC 4-cycle screening",
+  "screening_generator_only": true,
+  "N": 4096,
+  "K": 2048,
+  "Z": 128,
+  "strong_base_columns": [
+    0,
+    10,
+    20
+  ],
+  "strong_degree": 12,
+  "normal_degree": 3,
+  "base_row_degrees": [
+    8,
+    8,
+    7,
+    7,
+    8,
+    7,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    7,
+    7
+  ],
+  "strong_edges_per_base_row": [
+    3,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    2,
+    3
+  ],
+  "qc_4cycle_screen": "passed during every edge insertion"
+}

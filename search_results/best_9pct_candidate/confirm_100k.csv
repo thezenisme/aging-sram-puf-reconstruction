@@ -1,0 +1,2 @@
+Noise_Rate, Actual_BER, Baseline_FER, Staircase_FER, Improvement, Avg_Iter_Baseline, Avg_Iter_Staircase, Tests, Fail_Baseline, Fail_Staircase, Rule3_95_UB
+0.021,0.09036,0.843893056,2.88517023e-05,100.0,56.53,13.11,103980,87748,3,-1

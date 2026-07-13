@@ -12,7 +12,7 @@ CONFIGS = {
         "z": 128,       
         "high_deg": 12, 
         "suffix": "1_2_long",
-        "strong_cols": [0]
+        "strong_cols": [0, 10, 20]
     }
 }
 
@@ -28,24 +28,24 @@ def verify_orthogonality_probabilistic(G, H, num_tests=50):
     不再进行全量矩阵乘法，而是随机抽取向量 u 进行编码和校验。
     """
     K, N = G.shape
-    
+
     print(f"   [Verify] 启动概率性验证 (随机测试 {num_tests} 次)...")
-    
+
     for i in range(num_tests):
         # 1. 随机生成消息 u (0/1分布)
         u = np.random.randint(0, 2, K).astype(np.int8)
-        
+
         # 2. 编码: c = u * G (分步计算节省内存)
         c = np.dot(u, G) % 2
-        
+
         # 3. 校验: s = c * H.T
         s = np.dot(c, H.T) % 2
-        
+
         # 4. 检查校验子是否全为 0
         if np.sum(s) != 0:
             print(f"   [Fail] 测试 {i+1}/{num_tests} 失败! 发现非零校验子。")
             return False
-            
+
     return True
 
 # ==============================================================================
@@ -61,7 +61,7 @@ def compute_g_orthogonal(H):
     H_sys = H.copy()
     col_permutation = np.arange(N)
     pivot_row = 0
-    
+
     for col_idx in range(K, N):
         if pivot_row >= M: break
         pivot_found = False
@@ -189,16 +189,16 @@ def generate_qc_peg_matrix_optimized(n, k, z, high_deg, strong_cols=None):
     """
     n_base = n // z
     m_base = n_base // 2
-    
+
     H_base = np.full((m_base, n_base), -1, dtype=int)
-    
+
     # 使用传入的强列索引列表，默认使用前m_base个列
     if strong_cols is None:
         strong_base_cols = [i for i in range(m_base)]
     else:
         # 确保强列索引不超过基矩阵列数
         strong_base_cols = [col for col in strong_cols if col < n_base]
-    
+
     strong_base_set = set(strong_base_cols)
     
     print(f"   [Strict-PEG] 开始构造: Base {m_base}x{n_base}, Z={z}")
@@ -361,9 +361,32 @@ def export_files(H, G, config, strong_base_cols):
         f.write('};\n')
 
 # ==============================================================================
-# 主函数 (逻辑更新)
+# 主函数 (逻辑更新，支持命令行参数)
 # ==============================================================================
 def main():
+    # 解析命令行参数
+    seed_arg = None
+    out_dir = None
+    for i, arg in enumerate(sys.argv[1:]):
+        if arg == "--seed" and i+1 < len(sys.argv[1:]):
+            seed_arg = int(sys.argv[i+2])
+        elif arg.startswith("--seed="):
+            seed_arg = int(arg.split("=")[1])
+        elif arg == "--outdir" and i+1 < len(sys.argv[1:]):
+            out_dir = sys.argv[i+2]
+        elif arg.startswith("--outdir="):
+            out_dir = arg.split("=")[1]
+
+    if seed_arg is not None:
+        np.random.seed(seed_arg)
+        print(f">> 设置 numpy random seed = {seed_arg}")
+
+    if out_dir is not None:
+        os.makedirs(out_dir, exist_ok=True)
+        orig_dir = os.getcwd()
+        os.chdir(out_dir)
+        print(f">> 输出目录: {out_dir}")
+
     for name, cfg in CONFIGS.items():
         print("\n>> 处理: " + name.upper() + " (N=" + str(cfg['n']) + ", K=" + str(cfg['k']) + ")")
         
@@ -394,6 +417,9 @@ def main():
             print("   [Success] " + name.upper() + " 生成完成！")
         else:
             print("   [Check] ❌ 验证失败！")
+
+    if out_dir is not None:
+        os.chdir(orig_dir)
 
 if __name__ == "__main__":
     main()

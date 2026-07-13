@@ -14,3 +14,7 @@ The CSV records aggregate FER and iteration statistics, not per-frame traces.
 Values printed as `0.000000` are output-resolution entries from runs governed
 by the stopping rule described in the manuscript; they are not analytic proof
 of zero failure probability.
+
+`test_results_staircase_scale_2.000/` contains the frozen scale-2.0 CSV files
+copied from the experiment directory, including raw summaries and fitted
+curves for the evaluated block lengths.

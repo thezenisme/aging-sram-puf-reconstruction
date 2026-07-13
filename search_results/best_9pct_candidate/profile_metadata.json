@@ -1,0 +1,10 @@
+{
+  "N": 4096,
+  "mapped_hotspots": 128,
+  "outside_budget_clustered_hotspots": 640,
+  "mapped_profile_mean": 0.15,
+  "outside_profile_mean": 0.14,
+  "normal_profile_mean": 0.01,
+  "outside_cluster_rule": "logical_index mod 16 < 3, excluding mapped positions",
+  "purpose": "matrix-search stress profile; top-A selection is unambiguous"
+}

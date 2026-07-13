@@ -1,6 +1,10 @@
 *.exe
 *.o
 *.log
+!search_results/best_9pct_candidate/01_generate.log
+!search_results/best_9pct_candidate/02_compile.log
+!search_results/best_9pct_candidate/03_screen.log
+!search_results/best_9pct_candidate/04_confirm_100k.log
 *.jou
 *.str
 *.pb
@@ -10,6 +14,7 @@ __pycache__/
 cases/
 scale=*/
 test_results_*/
+!results/test_results_staircase_scale_2.000/
+!results/test_results_staircase_scale_2.000/*.csv
 work_*/
 *.csv.tmp
-

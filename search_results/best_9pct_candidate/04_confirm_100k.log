@@ -1,0 +1,29 @@
+=== Sanity Check ===
+[Profile] Index 0 Error Rate: 0.150000, paper-mask=ERASE
+[Profile] Index 20 Error Rate: 0.150000, paper-mask=ERASE
+[Profile] Index 40 Error Rate: 0.150000, paper-mask=ERASE
+==================================
+=== Paper-logic sanity check ===
+[QC] base matrix 16x32, Z=128, rate=0.500
+[Paper Mask] target A=128 (Z=128), selected=128, profile-hot-selected=128, profile-hot-total=768
+[Paper Mask] selected in declared anchors=128/128, selected with expected high degree=128/128, degree min/avg/max=12/12.00/12, zero-degree selected=0
+[WARN] Profile hot count (768) does not match paper target A (128). Tied normal cells will be selected by index order.
+[UEP Anchor 0] [0..127]: degree min/avg/max=12/12.00/12, zero=0, paper-mask=43, profile-hot=58, OK
+[UEP Anchor 1] [1280..1407]: degree min/avg/max=12/12.00/12, zero=0, paper-mask=42, profile-hot=57, OK
+[UEP Anchor 2] [2560..2687]: degree min/avg/max=12/12.00/12, zero=0, paper-mask=43, profile-hot=58, OK
+================================
+...
+
+=== LDPC Staircase Quantization Test (Length=long) ===
+N=4096, K=2048 (Rate=1/2)
+PUF Scale: 2.000
+Seed: 12345
+Monte Carlo: target_errors=50, max_tests=100000, max_noise=0.021
+Single-noise confidence mode: noise_rate=0.021
+Output: test_results_staircase_paper_scale_2.000_single0.021_te50_mt100000/fer_comparison_length_long.csv
+
+Noise_Rate, Actual_BER, Baseline_FER, Staircase_FER, Improvement, Avg_Iter_Baseline, Avg_Iter_Staircase, Tests, Fail_Baseline, Fail_Staircase, Rule3_95_UB
+==============================================================================================================
+0.021, 0.09036, 0.843893056, 2.88517023e-05, 100.0, 56.53, 13.11, 103980, 87748, 3, -1
+
+Tests finished for length configuration: long

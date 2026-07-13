@@ -1,0 +1,4 @@
+command: python <repo>/matrix_search/generate_qcpeg_screen.py --seed 7001 --outdir <candidate>
+cwd: <repo>/matrix_search
+elapsed_seconds: 0.195
+exit_code: 0
