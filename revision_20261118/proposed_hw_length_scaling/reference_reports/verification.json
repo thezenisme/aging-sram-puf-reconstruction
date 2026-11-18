@@ -1,0 +1,673 @@
+{
+  "complete": true,
+  "configurations": [
+    {
+      "N": 1024,
+      "passed": true,
+      "C_python_agreement": true,
+      "full_codeword_checked": true,
+      "reset_abort_checked": true,
+      "backpressure_checked": true,
+      "production_cycle_lockstep": false,
+      "frames": [
+        {
+          "name": "all_positive",
+          "limit": 200,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": null,
+          "rtl": {
+            "N": 1024,
+            "frame": 0,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 19849,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 6912,
+            "VN": 4480,
+            "syndrome": 3456,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "nonzero_codeword",
+          "limit": 200,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": true,
+          "rtl": {
+            "N": 1024,
+            "frame": 1,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 19849,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 6912,
+            "VN": 4480,
+            "syndrome": 3456,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "erased_noise",
+          "limit": 12,
+          "iterations": 8,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": true,
+          "rtl": {
+            "N": 1024,
+            "frame": 2,
+            "iterations": 8,
+            "fail": 0,
+            "cycles": 101518,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 55296,
+            "VN": 35840,
+            "syndrome": 5381,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "noise_failure",
+          "limit": 4,
+          "iterations": 4,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 1024,
+            "frame": 3,
+            "iterations": 4,
+            "fail": 1,
+            "cycles": 50646,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 27648,
+            "VN": 17920,
+            "syndrome": 77,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "signed_extremes",
+          "limit": 2,
+          "iterations": 2,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 1024,
+            "frame": 4,
+            "iterations": 2,
+            "fail": 1,
+            "cycles": 27813,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 13824,
+            "VN": 8960,
+            "syndrome": 28,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "zero_llr",
+          "limit": 0,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 1024,
+            "frame": 5,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 19849,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 6912,
+            "VN": 4480,
+            "syndrome": 3456,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "all_negative",
+          "limit": 1,
+          "iterations": 1,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 1024,
+            "frame": 6,
+            "iterations": 1,
+            "fail": 1,
+            "cycles": 17744,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 6912,
+            "VN": 4480,
+            "syndrome": 1351,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "random_integer",
+          "limit": 5,
+          "iterations": 5,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 1024,
+            "frame": 7,
+            "iterations": 5,
+            "fail": 1,
+            "cycles": 62003,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 34560,
+            "VN": 22400,
+            "syndrome": 42,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "limit_clamp",
+          "limit": 255,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 1024,
+            "frame": 8,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 19849,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 6912,
+            "VN": 4480,
+            "syndrome": 3456,
+            "output": 520,
+            "finish": 1
+          }
+        },
+        {
+          "name": "full_200_failure",
+          "limit": 200,
+          "iterations": 200,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 1024,
+            "frame": 9,
+            "iterations": 200,
+            "fail": 1,
+            "cycles": 2286208,
+            "input": 1024,
+            "clear": 3456,
+            "CN": 1382400,
+            "VN": 896000,
+            "syndrome": 2807,
+            "output": 520,
+            "finish": 1
+          }
+        }
+      ]
+    },
+    {
+      "N": 2048,
+      "passed": true,
+      "C_python_agreement": true,
+      "full_codeword_checked": true,
+      "reset_abort_checked": true,
+      "backpressure_checked": true,
+      "production_cycle_lockstep": false,
+      "frames": [
+        {
+          "name": "all_positive",
+          "limit": 200,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": null,
+          "rtl": {
+            "N": 2048,
+            "frame": 0,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 42577,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 14976,
+            "VN": 9536,
+            "syndrome": 7488,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "nonzero_codeword",
+          "limit": 200,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": true,
+          "rtl": {
+            "N": 2048,
+            "frame": 1,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 42577,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 14976,
+            "VN": 9536,
+            "syndrome": 7488,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "erased_noise",
+          "limit": 12,
+          "iterations": 6,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": true,
+          "rtl": {
+            "N": 2048,
+            "frame": 2,
+            "iterations": 6,
+            "fail": 0,
+            "cycles": 165465,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 89856,
+            "VN": 57216,
+            "syndrome": 7816,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "noise_failure",
+          "limit": 4,
+          "iterations": 4,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 2048,
+            "frame": 3,
+            "iterations": 4,
+            "fail": 1,
+            "cycles": 108705,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 59904,
+            "VN": 38144,
+            "syndrome": 80,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "signed_extremes",
+          "limit": 2,
+          "iterations": 2,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 2048,
+            "frame": 4,
+            "iterations": 2,
+            "fail": 1,
+            "cycles": 59681,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 29952,
+            "VN": 19072,
+            "syndrome": 80,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "zero_llr",
+          "limit": 0,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 2048,
+            "frame": 5,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 42577,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 14976,
+            "VN": 9536,
+            "syndrome": 7488,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "all_negative",
+          "limit": 1,
+          "iterations": 1,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 2048,
+            "frame": 6,
+            "iterations": 1,
+            "fail": 1,
+            "cycles": 35097,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 14976,
+            "VN": 9536,
+            "syndrome": 8,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "random_integer",
+          "limit": 5,
+          "iterations": 5,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 2048,
+            "frame": 7,
+            "iterations": 5,
+            "fail": 1,
+            "cycles": 133233,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 74880,
+            "VN": 47680,
+            "syndrome": 96,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "limit_clamp",
+          "limit": 255,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 2048,
+            "frame": 8,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 42577,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 14976,
+            "VN": 9536,
+            "syndrome": 7488,
+            "output": 1040,
+            "finish": 1
+          }
+        },
+        {
+          "name": "full_200_failure",
+          "limit": 200,
+          "iterations": 200,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 2048,
+            "frame": 9,
+            "iterations": 200,
+            "fail": 1,
+            "cycles": 4915985,
+            "input": 2048,
+            "clear": 7488,
+            "CN": 2995200,
+            "VN": 1907200,
+            "syndrome": 3008,
+            "output": 1040,
+            "finish": 1
+          }
+        }
+      ]
+    },
+    {
+      "N": 4096,
+      "passed": true,
+      "C_python_agreement": true,
+      "full_codeword_checked": true,
+      "reset_abort_checked": true,
+      "backpressure_checked": true,
+      "production_cycle_lockstep": true,
+      "frames": [
+        {
+          "name": "all_positive",
+          "limit": 200,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": null,
+          "rtl": {
+            "N": 4096,
+            "frame": 0,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 88993,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 31488,
+            "VN": 19840,
+            "syndrome": 15744,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "nonzero_codeword",
+          "limit": 200,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": true,
+          "rtl": {
+            "N": 4096,
+            "frame": 1,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 88993,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 31488,
+            "VN": 19840,
+            "syndrome": 15744,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "erased_noise",
+          "limit": 12,
+          "iterations": 11,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": true,
+          "rtl": {
+            "N": 4096,
+            "frame": 2,
+            "iterations": 11,
+            "fail": 0,
+            "cycles": 638633,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 346368,
+            "VN": 218240,
+            "syndrome": 52104,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "noise_failure",
+          "limit": 4,
+          "iterations": 4,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 4096,
+            "frame": 3,
+            "iterations": 4,
+            "fail": 1,
+            "cycles": 227273,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 125952,
+            "VN": 79360,
+            "syndrome": 40,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "signed_extremes",
+          "limit": 2,
+          "iterations": 2,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 4096,
+            "frame": 4,
+            "iterations": 2,
+            "fail": 1,
+            "cycles": 124665,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 62976,
+            "VN": 39680,
+            "syndrome": 88,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "zero_llr",
+          "limit": 0,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 4096,
+            "frame": 5,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 88993,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 31488,
+            "VN": 19840,
+            "syndrome": 15744,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "all_negative",
+          "limit": 1,
+          "iterations": 1,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 4096,
+            "frame": 6,
+            "iterations": 1,
+            "fail": 1,
+            "cycles": 73257,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 31488,
+            "VN": 19840,
+            "syndrome": 8,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "random_integer",
+          "limit": 5,
+          "iterations": 5,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 4096,
+            "frame": 7,
+            "iterations": 5,
+            "fail": 1,
+            "cycles": 278657,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 157440,
+            "VN": 99200,
+            "syndrome": 96,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "limit_clamp",
+          "limit": 255,
+          "iterations": 1,
+          "syndrome_fail": 0,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 4096,
+            "frame": 8,
+            "iterations": 1,
+            "fail": 0,
+            "cycles": 88993,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 31488,
+            "VN": 19840,
+            "syndrome": 15744,
+            "output": 2080,
+            "finish": 1
+          }
+        },
+        {
+          "name": "full_200_failure",
+          "limit": 200,
+          "iterations": 200,
+          "syndrome_fail": 1,
+          "payload_matches_transmitted": false,
+          "rtl": {
+            "N": 4096,
+            "frame": 9,
+            "iterations": 200,
+            "fail": 1,
+            "cycles": 10290497,
+            "input": 4096,
+            "clear": 15744,
+            "CN": 6297600,
+            "VN": 3968000,
+            "syndrome": 2976,
+            "output": 2080,
+            "finish": 1
+          }
+        }
+      ]
+    }
+  ],
+  "rtl_hashes": {
+    "formal_nms_core.sv": "2a7eea1033a5d45049c432d71b2077e66d0959dd79c897a5c6be843cf7607869",
+    "proposed_formal_stream.sv": "2e81a4e0b39021ec1451404096207f71db396c0726bd6cad9095af3f3d88652c"
+  },
+  "elapsed_seconds": 64.74538540840149
+}

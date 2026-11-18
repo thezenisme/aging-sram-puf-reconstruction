@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-14",
+  "purpose": "Read-only verification fixture; not a retained intermediate project",
+  "original_root": "D:\\program\\proposed_hw_formal_5bit_stream_4bit",
+  "file_hashes": {
+    "rtl/formal_nms_core.sv": "3ac629af17824ad80bef03e6d785a8ff4f6e5d235fa88d9c17decec69b1856d3",
+    "rtl/proposed_formal_stream.sv": "fbc095e8832c14d75abe0efd80502412491c53d9a3305fd9c9d903adb7d78185",
+    "reports/rtl_verification.json": "bc55730d4a95e51bd76d18e8074071c286c6e3fdfba67213f02d3e669c5a16b7",
+    "reports/resources.json": "daab648f5541c26039ea2b0adeb11d7a051ad3b58b5fe451b6c0a5b7adafb99a",
+    "reports/provenance.json": "efcfc0c8553ae00ed62364f209fc8b12ede0e2853fe6186e9a89bde8d51057cb",
+    "build/distributed_stream/utilization_synth.rpt": "378a66a107045f0ea8ee56b80f5eacf5d7e99ef05f402f3ab8c916c21ee1ee44",
+    "build/distributed_stream/utilization_hierarchy.rpt": "31aa4f1b1b100de6a5c459857adee4a57ea6371a638b8dbb7a1e4fcb413cff66"
+  },
+  "note": "Historical absolute paths in copied JSON are provenance only. Live scripts resolve the local snapshot."
+}

@@ -1,0 +1,4 @@
+TURBO_LATENCY_CONFIG input_llr_bits=5 output_bits=2048 inputs=4096 iterations=10 period_ns=10.000
+TURBO_LATENCY start_to_done=258993 clk first_input_to_done=256939 clk last_input_to_done=252844 clk core_first_input_to_done=252840 clk
+TURBO_LATENCY_INPUT accepted=4096 input_transfer_cycles=4096 final_payload=PASS
+TURBO_COMPARE_PASS cycles=258995 inputs=4096 outputs=2048

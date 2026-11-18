@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "configurations": [
+    {
+      "N": 1024,
+      "passed": true,
+      "frames": 3,
+      "vector_indices": [
+        0,
+        1,
+        4
+      ],
+      "simulation": "Post-synthesis functional, no SDF",
+      "cycle_counts_match_RTL": true,
+      "netlist_sha256": "9e4f6c4be49835ed6a20a7f8bee22ed710cf9e982337a039b502c64aa14cab84"
+    },
+    {
+      "N": 2048,
+      "passed": true,
+      "frames": 3,
+      "vector_indices": [
+        0,
+        1,
+        4
+      ],
+      "simulation": "Post-synthesis functional, no SDF",
+      "cycle_counts_match_RTL": true,
+      "netlist_sha256": "6cf4e2c47cb063e1cad1a47d806da5029ababe388b4e798e1e961252094852df"
+    },
+    {
+      "N": 4096,
+      "passed": true,
+      "frames": 3,
+      "vector_indices": [
+        0,
+        1,
+        4
+      ],
+      "simulation": "Post-synthesis functional, no SDF",
+      "cycle_counts_match_RTL": true,
+      "netlist_sha256": "dd8bd56cd6e01bbb54464f98bf1d75fa445010d8a0396b1e7cb79bdb6bf9afad"
+    }
+  ],
+  "elapsed_seconds": 39.30706715583801
+}

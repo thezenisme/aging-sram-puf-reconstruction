@@ -1,0 +1,30 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Oct 14 16:22:01 2026
+| Host         : haikunzhao running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file D:/program/polar_hw_kestel_512_64/comparison_2048_no_clock/build/optimized/utilization_hierarchy.rpt
+| Design       : polar_sc_2048
+| Device       : xczu3eg-sbva484-1-i
+| Speed File   : -1
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+-----------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|      Instance     |      Module     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-------------------+-----------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| polar_sc_2048     |           (top) |       2755 |       2755 |       0 |    0 | 2314 |      0 |      4 |    0 |          0 |
+|   (polar_sc_2048) |           (top) |         61 |         61 |       0 |    0 | 2120 |      0 |      0 |    0 |          0 |
+|   core            | polar_sc_kestel |       2694 |       2694 |       0 |    0 |  194 |      0 |      4 |    0 |          0 |
++-------------------+-----------------+------------+------------+---------+------+------+--------+--------+------+------------+
+
+

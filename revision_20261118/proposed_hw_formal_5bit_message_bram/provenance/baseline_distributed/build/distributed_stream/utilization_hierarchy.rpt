@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Oct 14 19:43:52 2026
+| Host         : haikunzhao running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file D:/program/proposed_hw_formal_5bit_stream_4bit/build/distributed_stream/utilization_hierarchy.rpt
+| Design       : proposed_formal_stream
+| Device       : xczu3eg-sbva484-1-i
+| Speed File   : -1
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|        Instance        |              Module              | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++------------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| proposed_formal_stream |                            (top) |       4028 |       1228 |    2800 |    0 | 160 |      1 |      0 |    0 |          0 |
+|   core                 |                  formal_nms_core |       4028 |       1228 |    2800 |    0 | 160 |      1 |      0 |    0 |          0 |
+|     (core)             |                  formal_nms_core |        192 |        192 |       0 |    0 | 160 |      1 |      0 |    0 |          0 |
+|     input_store        |                 formal_async_ram |        349 |         29 |     320 |    0 |   0 |      0 |      0 |    0 |          0 |
+|     message_store      | formal_async_ram__parameterized0 |       2679 |        711 |    1968 |    0 |   0 |      0 |      0 |    0 |          0 |
+|     var_store          |               formal_async_ram_0 |        808 |        296 |     512 |    0 |   0 |      0 |      0 |    0 |          0 |
++------------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+
+

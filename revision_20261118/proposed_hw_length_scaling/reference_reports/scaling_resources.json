@@ -1,0 +1,80 @@
+{
+  "part": "xczu3eg-sfvc784-1-i",
+  "tool": "Vivado 2022.2",
+  "stage": "OOC synthesis",
+  "clock_constraint": null,
+  "matrix_policy": "Actual existing paper configurations; base matrix and degrees vary with length.",
+  "scope": "Five-bit flooding NMS; channel/variable LUTRAM; edge-message BRAM; 64-bit output stream.",
+  "rows": [
+    {
+      "N": 1024,
+      "K": 512,
+      "Z": 64,
+      "Edges": 3456,
+      "LUTs": 632,
+      "Logic": 424,
+      "LUTRAM": 208,
+      "FFs": 151,
+      "BRAM_tiles": 1.5,
+      "DSPs": 0,
+      "LUT_per_input_bit": 0.6171875,
+      "Logic_per_input_bit": 0.4140625,
+      "LUTRAM_per_input_bit": 0.203125,
+      "message_update_cycles": 11392,
+      "full_iteration_cycles": 14848,
+      "report_sha256": "abaf5f00c4ec8636938c9e6f92ba8a70f3d3eaa3bd39e1db04fa0fdfad063b8d"
+    },
+    {
+      "N": 2048,
+      "K": 1024,
+      "Z": 64,
+      "Edges": 7488,
+      "LUTs": 950,
+      "Logic": 534,
+      "LUTRAM": 416,
+      "FFs": 156,
+      "BRAM_tiles": 2.0,
+      "DSPs": 0,
+      "LUT_per_input_bit": 0.4638671875,
+      "Logic_per_input_bit": 0.2607421875,
+      "LUTRAM_per_input_bit": 0.203125,
+      "message_update_cycles": 24512,
+      "full_iteration_cycles": 32000,
+      "report_sha256": "e100a7585feffff1e1dca5b2a1c4e5d542e5f9e9723fe53bf033e6bd8c1d8a09"
+    },
+    {
+      "N": 4096,
+      "K": 2048,
+      "Z": 128,
+      "Edges": 15744,
+      "LUTs": 1440,
+      "Logic": 608,
+      "LUTRAM": 832,
+      "FFs": 160,
+      "BRAM_tiles": 3.5,
+      "DSPs": 0,
+      "LUT_per_input_bit": 0.3515625,
+      "Logic_per_input_bit": 0.1484375,
+      "LUTRAM_per_input_bit": 0.203125,
+      "message_update_cycles": 51328,
+      "full_iteration_cycles": 67072,
+      "report_sha256": "c4d33c6e714e28a25c2dfc0fff4955d3c130945f9963b3df28cd3da1a6a56ac0"
+    }
+  ],
+  "production_4096_baseline": {
+    "LUTs": 1440,
+    "Logic": 608,
+    "LUTRAM": 832,
+    "FFs": 160,
+    "BRAM_tiles": 3.5,
+    "DSPs": 0
+  },
+  "delta_4096_vs_production": {
+    "LUTs": 0,
+    "Logic": 0,
+    "LUTRAM": 0,
+    "FFs": 0,
+    "BRAM_tiles": 0.0,
+    "DSPs": 0
+  }
+}

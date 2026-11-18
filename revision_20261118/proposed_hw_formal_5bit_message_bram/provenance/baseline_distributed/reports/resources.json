@@ -1,0 +1,178 @@
+{
+  "tool": "Vivado 2022.2",
+  "part": "xczu3eg-sbva484-1-i",
+  "stage": "OOC synthesis",
+  "clock": null,
+  "rows": [
+    {
+      "variant": "formal_flooding5",
+      "llr_bits": 5,
+      "input_bits": 4096,
+      "scope": "Formal H + five-bit flooding NMS + G information coordinates + 2048-bit indexed register",
+      "lut": 4060,
+      "lutram": 2800,
+      "ff": 2278,
+      "ramb18": 0,
+      "ramb36": 1,
+      "dsp": 0,
+      "report": "D:\\program\\proposed_hw_formal_5bit_2048_io\\build\\formal_distributed\\utilization_synth.rpt",
+      "report_sha256": "a06ee737d49881f3d22c82e4e5c3c307e24d1ab9f72c169cf3f25d08f4a4626e"
+    },
+    {
+      "variant": "formal_flooding5_distributed_stream",
+      "llr_bits": 5,
+      "magnitude_bits": 4,
+      "input_bits": 4096,
+      "output_bits": 2048,
+      "internal_full_output_buffer": false,
+      "scope": "Formal H + five-bit flooding NMS + original asynchronous LUTRAM + 32x64-bit output stream",
+      "lut": 4028,
+      "lutram": 2800,
+      "ff": 160,
+      "ramb18": 0,
+      "ramb36": 1,
+      "dsp": 0,
+      "report": "D:\\program\\proposed_hw_formal_5bit_stream_4bit\\build\\distributed_stream\\utilization_synth.rpt",
+      "report_sha256": "378a66a107045f0ea8ee56b80f5eacf5d7e99ef05f402f3ab8c916c21ee1ee44"
+    }
+  ],
+  "optimized_minus_baseline": {
+    "lut": -32,
+    "lutram": 0,
+    "ff": -2118,
+    "ramb18": 0,
+    "ramb36": 0,
+    "dsp": 0
+  },
+  "reduction_percent": {
+    "lut": 0.7881773399014746,
+    "ff": 92.97629499561019
+  },
+  "memory_hierarchy": {
+    "input_store": {
+      "lut": 349,
+      "lutram": 320,
+      "ff": 0,
+      "ramb36": 0,
+      "ramb18": 0
+    },
+    "message_store": {
+      "lut": 2679,
+      "lutram": 1968,
+      "ff": 0,
+      "ramb36": 0,
+      "ramb18": 0
+    },
+    "var_store": {
+      "lut": 808,
+      "lutram": 512,
+      "ff": 0,
+      "ramb36": 0,
+      "ramb18": 0
+    }
+  },
+  "rtl_frames": 12,
+  "backpressure_frames": 3,
+  "netlist_frames": 3,
+  "baseline_bit_decisions_and_iteration_counts_match": true,
+  "cycle_comparison": [
+    {
+      "name": "all_positive",
+      "iterations": 1,
+      "before": 89221,
+      "after": 89221,
+      "ratio": 1.0
+    },
+    {
+      "name": "nonzero_codeword",
+      "iterations": 1,
+      "before": 89221,
+      "after": 89221,
+      "ratio": 1.0
+    },
+    {
+      "name": "staircase_erased",
+      "iterations": 9,
+      "before": 527821,
+      "after": 527821,
+      "ratio": 1.0
+    },
+    {
+      "name": "noise_failure",
+      "iterations": 4,
+      "before": 227589,
+      "after": 227589,
+      "ratio": 1.0
+    },
+    {
+      "name": "signed_extremes",
+      "iterations": 2,
+      "before": 124893,
+      "after": 124893,
+      "ratio": 1.0
+    },
+    {
+      "name": "zero_llr",
+      "iterations": 1,
+      "before": 89221,
+      "after": 89221,
+      "ratio": 1.0
+    },
+    {
+      "name": "all_negative",
+      "iterations": 1,
+      "before": 73485,
+      "after": 73485,
+      "ratio": 1.0
+    },
+    {
+      "name": "all_127",
+      "iterations": 1,
+      "before": 89221,
+      "after": 89221,
+      "ratio": 1.0
+    },
+    {
+      "name": "random_integer",
+      "iterations": 5,
+      "before": 278893,
+      "after": 278893,
+      "ratio": 1.0
+    },
+    {
+      "name": "limited_high_noise",
+      "iterations": 20,
+      "before": 1049045,
+      "after": 1049045,
+      "ratio": 1.0
+    },
+    {
+      "name": "limit_clamp",
+      "iterations": 1,
+      "before": 89221,
+      "after": 89221,
+      "ratio": 1.0
+    },
+    {
+      "name": "full_200_iteration_failure",
+      "iterations": 200,
+      "before": 10290973,
+      "after": 10290973,
+      "ratio": 1.0
+    }
+  ],
+  "cycle_notes": "Both comparison runs use identical input bubbles and no output stalls. Separate RTL and netlist tests check output backpressure.",
+  "cycles_per_iteration_before_syndrome": {
+    "before": 51328,
+    "after": 51328
+  },
+  "baseline_cycles_match": true,
+  "source_preservation_verified": true,
+  "limitations": [
+    "Synthesis only; no placement, achieved frequency or power",
+    "No FER scan or formal equivalence proof; directed bit-true regression passed",
+    "2048-bit receiver buffer excluded; do not compare FF directly against a buffered Polar top",
+    "Data memories remain asynchronous LUTRAM; existing output-coordinate ROM may still use BRAM",
+    "Five-bit source behavior retained; no claim of equivalence to eight-bit software FER"
+  ]
+}

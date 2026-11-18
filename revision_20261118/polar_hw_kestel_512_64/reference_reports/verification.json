@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "version": "original",
+      "llr_bits": 8,
+      "frames": 128,
+      "decode_cycles": 7424,
+      "cycles_with_512_inputs": 7936,
+      "passed": true
+    },
+    {
+      "version": "exact",
+      "llr_bits": 8,
+      "frames": 128,
+      "decode_cycles": 7810,
+      "cycles_with_512_inputs": 8322,
+      "passed": true
+    },
+    {
+      "version": "fast",
+      "llr_bits": 8,
+      "frames": 128,
+      "decode_cycles": 5608,
+      "cycles_with_512_inputs": 6120,
+      "passed": true
+    },
+    {
+      "version": "original",
+      "llr_bits": 4,
+      "frames": 128,
+      "decode_cycles": 7424,
+      "cycles_with_512_inputs": 7936,
+      "passed": true
+    },
+    {
+      "version": "exact",
+      "llr_bits": 4,
+      "frames": 128,
+      "decode_cycles": 7810,
+      "cycles_with_512_inputs": 8322,
+      "passed": true
+    },
+    {
+      "version": "fast",
+      "llr_bits": 4,
+      "frames": 128,
+      "decode_cycles": 5608,
+      "cycles_with_512_inputs": 6120,
+      "passed": true
+    }
+  ],
+  "wrappers": [
+    {
+      "mode": "exact",
+      "llr_bits": 8,
+      "blocks": 32,
+      "total_input_bits": 16384,
+      "output_bits": 2048,
+      "cycles": 266368,
+      "passed": true
+    },
+    {
+      "mode": "fast",
+      "llr_bits": 8,
+      "blocks": 32,
+      "total_input_bits": 16384,
+      "output_bits": 2048,
+      "cycles": 195904,
+      "passed": true
+    }
+  ],
+  "fast_vs_exact_different_frames": {
+    "8": 47,
+    "4": 60
+  },
+  "note": "Random stress vectors include saturation and ties; this is not a BER/FER experiment.",
+  "baseline_core_sha256": "90cb0e86b0a2eed9ea729aea0c03a29750cfdc33d49b6762fd25011fe0644669"
+}

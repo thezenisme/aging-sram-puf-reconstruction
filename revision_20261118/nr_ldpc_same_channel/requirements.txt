@@ -1,0 +1,4 @@
+numpy>=1.21
+scipy>=1.9.3
+importlib-resources>=5.0
+py3gpp==0.6.0

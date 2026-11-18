@@ -1,0 +1,72 @@
+{
+  "N": 4096,
+  "K": 2048,
+  "M": 2048,
+  "Z": 128,
+  "edges": 15744,
+  "base_edges": 123,
+  "rank": 2046,
+  "nullity": 2050,
+  "row_degree_hist": {
+    "8": 1408,
+    "7": 640
+  },
+  "col_degree_hist": {
+    "12": 384,
+    "3": 3712
+  },
+  "QC_verified": true,
+  "G_valid": true,
+  "G_encoder_sentinel_verified": true,
+  "message_addresses_verified": true,
+  "output_matches_G_message": true,
+  "output_is_first_2048": false,
+  "output_first": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "output_last": [
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2048,
+    2049,
+    2050,
+    2176,
+    2177,
+    2178,
+    2179,
+    2304,
+    2305,
+    2306
+  ],
+  "original_source_hashes": {
+    "ldpc.c": "26f214ef6f608bf045e958e6329da6a2e056a466152c2bff3400a841a2a40e6f",
+    "ldpc.h": "43dd2628c040c2d4a26e350833156c3bfefe3f5e45d50efcd09bb5957c74961b",
+    "ldpc_config.h": "bae04fbaa6725c843f5b685b75f5e47bb90244c340056e9850623094777dab3a",
+    "ldpc_wrapper.h": "4e6e7e6c6b3aeb4ed370f94c0661101298975d062aaca0decdfd54395d99a195",
+    "h_matrix_1_2_long.h": "b66affa3094255d32912cce3c6ffe021eb89a5715222a4dfdbee4be5040c4947",
+    "g_matrix_1_2_long.h": "5db46aac6c5ea5108e5704237fcaaee4de9dd54783ba6cd055d4cc26f07980c2",
+    "puf_profile_long.h": "7ac668a7872bd49885a114d514e463395c605d6de238ad4b09ef30aab21a5bc7",
+    "matrix_data_1_2_long.c": "4f1a3038247d6f2fd99f1eb9383e873d7556b42c1d6e0a81e8d1aa3b8beace5b",
+    "test_staircase_quantization.c": "75d77c1c25f819b5e07a956b609c97ec9a6ab9429e3a4cf27f2a5d47d639db23",
+    "Makefile": "dfc3cf60b9d1bbd039d29112df3e0901513019156625049a30c3a5160bd1d61b"
+  }
+}

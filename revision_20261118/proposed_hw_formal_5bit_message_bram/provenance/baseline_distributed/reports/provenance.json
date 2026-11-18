@@ -1,0 +1,38 @@
+{
+  "source_hashes": {
+    "ldpc.c": "26f214ef6f608bf045e958e6329da6a2e056a466152c2bff3400a841a2a40e6f",
+    "ldpc.h": "43dd2628c040c2d4a26e350833156c3bfefe3f5e45d50efcd09bb5957c74961b",
+    "ldpc_config.h": "bae04fbaa6725c843f5b685b75f5e47bb90244c340056e9850623094777dab3a",
+    "ldpc_wrapper.h": "4e6e7e6c6b3aeb4ed370f94c0661101298975d062aaca0decdfd54395d99a195",
+    "h_matrix_1_2_long.h": "b66affa3094255d32912cce3c6ffe021eb89a5715222a4dfdbee4be5040c4947",
+    "g_matrix_1_2_long.h": "5db46aac6c5ea5108e5704237fcaaee4de9dd54783ba6cd055d4cc26f07980c2",
+    "puf_profile_long.h": "7ac668a7872bd49885a114d514e463395c605d6de238ad4b09ef30aab21a5bc7",
+    "matrix_data_1_2_long.c": "4f1a3038247d6f2fd99f1eb9383e873d7556b42c1d6e0a81e8d1aa3b8beace5b",
+    "test_staircase_quantization.c": "75d77c1c25f819b5e07a956b609c97ec9a6ab9429e3a4cf27f2a5d47d639db23",
+    "Makefile": "dfc3cf60b9d1bbd039d29112df3e0901513019156625049a30c3a5160bd1d61b"
+  },
+  "baseline_root": "D:\\program\\proposed_hw_formal_5bit_2048_io",
+  "artifact_hashes": {
+    "rtl\\formal_nms_core.sv": "3ac629af17824ad80bef03e6d785a8ff4f6e5d235fa88d9c17decec69b1856d3",
+    "rtl\\proposed_formal_stream.sv": "fbc095e8832c14d75abe0efd80502412491c53d9a3305fd9c9d903adb7d78185",
+    "scripts\\collect_results.py": "3b1e093152e538efc46aaa664c3fef917d4a0aaf26694bec61a6475d3cd92c8b",
+    "scripts\\create_project.tcl": "7c097bf685d8e3e4f3d5bb409cd9598e8ed6a98604b6279aaa5aaaff18c64b8e",
+    "scripts\\gui_synth_pre.tcl": "0d8a9645f28e9348c9f542f6bb8b65dcdd3eb1a0285f9835028c353c846e1eda",
+    "scripts\\synth.tcl": "ac5c9bdbf646b67f8897170172170eb29bd165c0cd0f211652d3f2d90fc93d43",
+    "tests\\reference.c": "5b82dbdd1f37a4b93f066a0d392c511b25daf283e452b31b96efc0bd07201774",
+    "tests\\verify.py": "b830abbfec593b427d0dc88c138accb67fd51b6ec3b054dd0a716042e310a2c7",
+    "tests\\verify_netlist.py": "407856dfd5e8e510e4b1ece1e6c824ac03cb288e69a84cbe4c33013bd5b37cf0",
+    "tb\\tb_stream.sv": "e2cf38a051da2ce20a1560ee53b1ce581e83b3f42cc153831c80046a63be04f8",
+    "generated\\base_edges.hex": "289300d3611226efd5fcdf77d74f46bd5c94234c0d07ac0ff86bd8b5c4c3479d",
+    "generated\\base_rows.hex": "ece7e544837418a67538fe541f7e5980ff3bba9fb91633226233b41b15d14579",
+    "generated\\matrix.json": "3ef21c49f5b93900c13a4399b9d862d4b0f982e43a4a79124bbbdc074eeee65c",
+    "generated\\output_positions.hex": "d9b7d0e3779ffc5c07bd46848d3236d6e5d0077eb15f6bd9d3dd1b66fa6a1dac"
+  },
+  "original_sources_and_baselines_unchanged": true,
+  "baseline_vector_hashes": {
+    "inputs.hex": "efa5f094e61754057bd6a9550183f57c0876bbf55aa0062d003562f7b1246607",
+    "expected.hex": "01bb8d8925cc646400aab5e1fda34d836bdb98a9d7aeda361b807ac6166624ee",
+    "full.hex": "18e59bed21cbc6c56f3d8e877a08f303abcd0fbc97b185b641e50282bd932b31",
+    "meta.hex": "19982637033a9d7221d4973af30ed7913e07a64b24b20d53b35b76199c557b52"
+  }
+}

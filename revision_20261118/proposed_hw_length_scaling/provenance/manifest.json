@@ -1,0 +1,61 @@
+{
+  "files": [
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n1024\\h_matrix_1_2_standard.h",
+      "snapshot": "provenance\\n1024\\h_matrix_1_2_standard.h",
+      "sha256": "52075f4e0e2e9ef4e908caa660e1e4ce99a4b5e835b5bbbefb7995a7658bc76a"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n1024\\g_matrix_1_2_standard.h",
+      "snapshot": "provenance\\n1024\\g_matrix_1_2_standard.h",
+      "sha256": "feb46424700bb4703e04133022fece70e7894a5784d359b86bfd84de2f8d59e3"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n1024\\matrix_data_1_2_standard.c",
+      "snapshot": "provenance\\n1024\\matrix_data_1_2_standard.c",
+      "sha256": "d02d39e0e5e15fdbdc034c26602f6c94191960e98975909c10620a3527314a3f"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n2048\\h_matrix_1_2_medium.h",
+      "snapshot": "provenance\\n2048\\h_matrix_1_2_medium.h",
+      "sha256": "2f703be8bd4c96db0c98007a63bd89821c3e2870108fa267f42c1b2a780485db"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n2048\\g_matrix_1_2_medium.h",
+      "snapshot": "provenance\\n2048\\g_matrix_1_2_medium.h",
+      "sha256": "99fef73edb702aae74435a4adcb6cf9e7681c837252060f818884593ac96d9ff"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n2048\\matrix_data_1_2_medium.c",
+      "snapshot": "provenance\\n2048\\matrix_data_1_2_medium.c",
+      "sha256": "a5cf4d0f436e1807e04d45a314f2a5f92bd00deea7e4413f8129054d9b11fc15"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n4096\\h_matrix_1_2_long.h",
+      "snapshot": "provenance\\n4096\\h_matrix_1_2_long.h",
+      "sha256": "b66affa3094255d32912cce3c6ffe021eb89a5715222a4dfdbee4be5040c4947"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n4096\\g_matrix_1_2_long.h",
+      "snapshot": "provenance\\n4096\\g_matrix_1_2_long.h",
+      "sha256": "5db46aac6c5ea5108e5704237fcaaee4de9dd54783ba6cd055d4cc26f07980c2"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\n4096\\matrix_data_1_2_long.c",
+      "snapshot": "provenance\\n4096\\matrix_data_1_2_long.c",
+      "sha256": "4f1a3038247d6f2fd99f1eb9383e873d7556b42c1d6e0a81e8d1aa3b8beace5b"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\production_snapshot\\rtl\\formal_nms_core.sv",
+      "snapshot": "provenance\\production_rtl\\formal_nms_core.sv",
+      "sha256": "d83cae306d60041ff0e7590a890f4f0d6ded7e2daa5dea5bb659a0f3bfdcb676"
+    },
+    {
+      "source": "D:\\program\\paper_artifact_minimal\\revision_20261118\\proposed_hw_length_scaling\\provenance\\production_snapshot\\rtl\\proposed_formal_stream.sv",
+      "snapshot": "provenance\\production_rtl\\proposed_formal_stream.sv",
+      "sha256": "fbc095e8832c14d75abe0efd80502412491c53d9a3305fd9c9d903adb7d78185"
+    }
+  ],
+  "matrix_policy": "Existing paper configurations; N=4096 uses the frozen production matrix. Not a fixed-base-matrix Z-only sweep.",
+  "production_project_untouched": true
+}

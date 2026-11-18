@@ -1,0 +1,26 @@
+{
+  "N": 1024,
+  "K": 512,
+  "M": 512,
+  "Z": 64,
+  "N_base": 16,
+  "M_base": 8,
+  "base_edges": 54,
+  "edges": 3456,
+  "max_row_degree": 7,
+  "row_degree_hist": {
+    "7": 384,
+    "6": 128
+  },
+  "col_degree_hist": {
+    "6": 128,
+    "3": 896
+  },
+  "rank": 512,
+  "generator_rank": 512,
+  "QC_verified": true,
+  "G_orthogonal": true,
+  "output_coordinates_verified": true,
+  "contiguous_message_addresses_verified": true,
+  "production_hex_match": false
+}

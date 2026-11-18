@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "configurations": [
+    {
+      "N": 1024,
+      "passed": true,
+      "report_sha256": "abaf5f00c4ec8636938c9e6f92ba8a70f3d3eaa3bd39e1db04fa0fdfad063b8d",
+      "part": "xczu3eg-sfvc784-1-i",
+      "tool": "Vivado 2022.2",
+      "mode": "out_of_context",
+      "clock_constraint": null
+    },
+    {
+      "N": 2048,
+      "passed": true,
+      "report_sha256": "e100a7585feffff1e1dca5b2a1c4e5d542e5f9e9723fe53bf033e6bd8c1d8a09",
+      "part": "xczu3eg-sfvc784-1-i",
+      "tool": "Vivado 2022.2",
+      "mode": "out_of_context",
+      "clock_constraint": null
+    },
+    {
+      "N": 4096,
+      "passed": true,
+      "report_sha256": "c4d33c6e714e28a25c2dfc0fff4955d3c130945f9963b3df28cd3da1a6a56ac0",
+      "part": "xczu3eg-sfvc784-1-i",
+      "tool": "Vivado 2022.2",
+      "mode": "out_of_context",
+      "clock_constraint": null
+    }
+  ],
+  "elapsed_seconds": 111.5420572757721
+}

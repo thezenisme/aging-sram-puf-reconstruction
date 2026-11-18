@@ -1,0 +1,16 @@
+{
+  "point_index": 42,
+  "noise_floor": 0.043,
+  "scale": 2.0,
+  "expected_raw_ber": 0.11549999999999999,
+  "actual_raw_ber": 0.1154837109375,
+  "frames": 100000,
+  "raw_errors": 47302128,
+  "message_failures": 99377,
+  "message_fer": 0.99377,
+  "message_bit_errors": 21801681,
+  "decoded_message_ber": 0.1064535205078125,
+  "mean_iterations": 10,
+  "zero_failure_upper95_one_sided": null,
+  "elapsed_seconds": 52.6711862000011
+}

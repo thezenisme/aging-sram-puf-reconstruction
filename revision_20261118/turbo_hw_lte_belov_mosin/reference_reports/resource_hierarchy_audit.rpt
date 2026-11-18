@@ -1,0 +1,48 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Oct 20 21:04:25 2026
+| Host         : haikunzhao running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file D:/FPGA/turbo/resource_hierarchy_audit.rpt
+| Design       : turbo_lte_4096_2048_compare_top
+| Device       : xczu3eg-sfvc784-1-i
+| Speed File   : -1
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------------+---------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|                Instance                |                 Module                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++----------------------------------------+---------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| turbo_lte_4096_2048_compare_top        |                                 (top) |       6493 |       5495 |     660 |  338 | 5461 |     19 |      4 |    0 |          1 |
+|   (turbo_lte_4096_2048_compare_top)    |                                 (top) |        147 |        147 |       0 |    0 | 2112 |      2 |      0 |    0 |          0 |
+|   core                                 |                     lte_turbo_decoder |       6304 |       5306 |     660 |  338 | 3349 |     14 |      4 |    0 |          1 |
+|     (core)                             |                     lte_turbo_decoder |       1279 |       1279 |       0 |    0 |  391 |      0 |      0 |    0 |          0 |
+|     a_c_sram                           |   lte_turbo_decoder_encoded_data_sram |         36 |         36 |       0 |    0 |    0 |      1 |      0 |    0 |          0 |
+|     bcjr_turbo_decoder_inst            |                    bcjr_turbo_decoder |       4724 |       3750 |     660 |  314 | 2690 |     10 |      2 |    0 |          0 |
+|       (bcjr_turbo_decoder_inst)        |                    bcjr_turbo_decoder |       3804 |       3490 |       0 |  314 | 2670 |      0 |      0 |    0 |          0 |
+|       alphas_sram                      |        bcjr_turbo_decoder_alphas_sram |        135 |        135 |       0 |    0 |    0 |      5 |      1 |    0 |          0 |
+|       betas_sram                       |      bcjr_turbo_decoder_alphas_sram_5 |         21 |         21 |       0 |    0 |    0 |      5 |      1 |    0 |          0 |
+|       llrs_sram                        |          bcjr_turbo_decoder_llrs_sram |        764 |        104 |     660 |    0 |   20 |      0 |      0 |    0 |          0 |
+|     c_c_sram                           | lte_turbo_decoder_encoded_data_sram_2 |         19 |         19 |       0 |    0 |    0 |      1 |      0 |    0 |          0 |
+|     d_c_sram                           | lte_turbo_decoder_encoded_data_sram_3 |         15 |         15 |       0 |    0 |    0 |      1 |      0 |    0 |          0 |
+|     lte_interleaver_inst               |                       lte_interleaver |        231 |        207 |       0 |   24 |  268 |      1 |      2 |    0 |          1 |
+|       (lte_interleaver_inst)           |                       lte_interleaver |        161 |        148 |       0 |   13 |  268 |      0 |      0 |    0 |          0 |
+|       lte_interleaver_data_0_sram_inst |             lte_interleaver_data_sram |          6 |          6 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|       lte_interleaver_data_1_sram_inst |           lte_interleaver_data_sram_4 |         14 |         14 |       0 |    0 |    0 |      0 |      1 |    0 |          0 |
+|       lte_interleaver_divider_inst     |               lte_interleaver_divider |         26 |         15 |       0 |   11 |    0 |      0 |      0 |    0 |          1 |
+|       lte_interleaver_table_sram_inst  |            lte_interleaver_table_sram |         24 |         24 |       0 |    0 |    0 |      1 |      0 |    0 |          0 |
+|   stream0_buffer                       |              turbo_derate_stream_sram |          1 |          1 |       0 |    0 |    0 |      1 |      0 |    0 |          0 |
+|   stream1_buffer                       |            turbo_derate_stream_sram_0 |          1 |          1 |       0 |    0 |    0 |      1 |      0 |    0 |          0 |
+|   stream2_buffer                       |            turbo_derate_stream_sram_1 |         40 |         40 |       0 |    0 |    0 |      1 |      0 |    0 |          0 |
++----------------------------------------+---------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+
+

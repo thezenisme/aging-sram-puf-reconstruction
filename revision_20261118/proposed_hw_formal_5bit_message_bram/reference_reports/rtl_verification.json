@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "reference": "Explicit five-bit C variant plus independent Python; original C retained for differences",
+  "frames": [
+    {
+      "name": "all_positive",
+      "limit": 200,
+      "iterations": 1,
+      "syndrome_fail": 0,
+      "reference8_iterations": 1,
+      "reference8_syndrome_fail": 0,
+      "hard_bit_differences_from_8bit": 0,
+      "codeword_bit_errors": 0,
+      "cycles": 89221,
+      "passed": true
+    },
+    {
+      "name": "nonzero_codeword",
+      "limit": 200,
+      "iterations": 1,
+      "syndrome_fail": 0,
+      "reference8_iterations": 1,
+      "reference8_syndrome_fail": 0,
+      "hard_bit_differences_from_8bit": 0,
+      "codeword_bit_errors": 0,
+      "cycles": 89221,
+      "passed": true
+    },
+    {
+      "name": "staircase_erased",
+      "limit": 12,
+      "iterations": 9,
+      "syndrome_fail": 0,
+      "reference8_iterations": 10,
+      "reference8_syndrome_fail": 0,
+      "hard_bit_differences_from_8bit": 0,
+      "codeword_bit_errors": 0,
+      "cycles": 527821,
+      "passed": true
+    },
+    {
+      "name": "noise_failure",
+      "limit": 4,
+      "iterations": 4,
+      "syndrome_fail": 1,
+      "reference8_iterations": 4,
+      "reference8_syndrome_fail": 1,
+      "hard_bit_differences_from_8bit": 362,
+      "codeword_bit_errors": 990,
+      "cycles": 227589,
+      "passed": true
+    },
+    {
+      "name": "signed_extremes",
+      "limit": 2,
+      "iterations": 2,
+      "syndrome_fail": 1,
+      "reference8_iterations": 2,
+      "reference8_syndrome_fail": 1,
+      "hard_bit_differences_from_8bit": 440,
+      "codeword_bit_errors": null,
+      "cycles": 124893,
+      "passed": true
+    },
+    {
+      "name": "zero_llr",
+      "limit": 0,
+      "iterations": 1,
+      "syndrome_fail": 0,
+      "reference8_iterations": 1,
+      "reference8_syndrome_fail": 0,
+      "hard_bit_differences_from_8bit": 0,
+      "codeword_bit_errors": null,
+      "cycles": 89221,
+      "passed": true
+    },
+    {
+      "name": "all_negative",
+      "limit": 1,
+      "iterations": 1,
+      "syndrome_fail": 1,
+      "reference8_iterations": 1,
+      "reference8_syndrome_fail": 1,
+      "hard_bit_differences_from_8bit": 128,
+      "codeword_bit_errors": null,
+      "cycles": 73485,
+      "passed": true
+    },
+    {
+      "name": "all_127",
+      "limit": 3,
+      "iterations": 1,
+      "syndrome_fail": 0,
+      "reference8_iterations": 1,
+      "reference8_syndrome_fail": 0,
+      "hard_bit_differences_from_8bit": 0,
+      "codeword_bit_errors": 0,
+      "cycles": 89221,
+      "passed": true
+    },
+    {
+      "name": "random_integer",
+      "limit": 5,
+      "iterations": 5,
+      "syndrome_fail": 1,
+      "reference8_iterations": 5,
+      "reference8_syndrome_fail": 1,
+      "hard_bit_differences_from_8bit": 426,
+      "codeword_bit_errors": null,
+      "cycles": 278893,
+      "passed": true
+    },
+    {
+      "name": "limited_high_noise",
+      "limit": 20,
+      "iterations": 20,
+      "syndrome_fail": 1,
+      "reference8_iterations": 20,
+      "reference8_syndrome_fail": 1,
+      "hard_bit_differences_from_8bit": 459,
+      "codeword_bit_errors": 488,
+      "cycles": 1049045,
+      "passed": true
+    },
+    {
+      "name": "limit_clamp",
+      "limit": 255,
+      "iterations": 1,
+      "syndrome_fail": 0,
+      "reference8_iterations": 1,
+      "reference8_syndrome_fail": 0,
+      "hard_bit_differences_from_8bit": 0,
+      "codeword_bit_errors": 0,
+      "cycles": 89221,
+      "passed": true
+    },
+    {
+      "name": "full_200_iteration_failure",
+      "limit": 200,
+      "iterations": 200,
+      "syndrome_fail": 1,
+      "reference8_iterations": 200,
+      "reference8_syndrome_fail": 1,
+      "hard_bit_differences_from_8bit": 237,
+      "codeword_bit_errors": null,
+      "cycles": 10290973,
+      "passed": true
+    }
+  ],
+  "seconds": 204.5677707195282,
+  "baseline_vector_hashes_match": true,
+  "baseline_cycles_match": true,
+  "backpressure_frames": 3,
+  "lockstep_cycle_by_cycle": true,
+  "prefetch_checks": 7746080,
+  "files": {
+    "rtl\\formal_nms_core.sv": "d83cae306d60041ff0e7590a890f4f0d6ded7e2daa5dea5bb659a0f3bfdcb676",
+    "rtl\\proposed_formal_stream.sv": "fbc095e8832c14d75abe0efd80502412491c53d9a3305fd9c9d903adb7d78185",
+    "tb\\tb_stream.sv": "384e61babaae64eefc17ece4ab1359c79eb5f645b4cf9ef71e21ff8434da7c91",
+    "tests\\reference.c": "5b82dbdd1f37a4b93f066a0d392c511b25daf283e452b31b96efc0bd07201774"
+  }
+}

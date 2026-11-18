@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "frames": 3,
+  "vector_indices": [
+    0,
+    1,
+    4
+  ],
+  "simulation": "Post-synthesis functional; no SDF",
+  "netlist_sha256": "295fef0bb411a15c192f79f8184bd52bb30e5629edee462b399c46bfb77153df",
+  "seconds": 57.31245565414429
+}

@@ -1,0 +1,1 @@
+synth_design -top turbo_lte_4096_2048_compare_top -part xczu3eg-sfvc784-1-i

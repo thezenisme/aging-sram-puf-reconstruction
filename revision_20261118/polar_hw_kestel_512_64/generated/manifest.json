@@ -1,0 +1,59 @@
+{
+  "N": 512,
+  "K": 64,
+  "lanes": 4,
+  "frozen_mask": "1777577f577f7fff177f7f7f7f7f7fff177f7f7f777f7fff777f7fff7fffffff177f7f7f777f7fff777f7fff7fffffff777f7fff7fffffff7fffffff7fffffff",
+  "variants": {
+    "exact": {
+      "alpha_words": 257,
+      "beta_words": 258,
+      "nodes": {
+        "NODE": 214,
+        "ZERO": 151,
+        "HD": 64
+      },
+      "instruction_count": 896,
+      "expanded_count": 2007,
+      "op_counts": {
+        "F": 63,
+        "ZERO": 151,
+        "G0": 178,
+        "HD": 64,
+        "EXTRACT": 64,
+        "H": 213,
+        "COPY": 99,
+        "G": 63,
+        "END": 1
+      },
+      "rom_depth": 1024,
+      "rom_sha256": "60ba2d7de5b0bee4a6d371608590f3dfd3754795047844539ce8c17d9191db85"
+    },
+    "fast": {
+      "alpha_words": 257,
+      "beta_words": 258,
+      "nodes": {
+        "NODE": 55,
+        "REP": 52,
+        "SPC": 4
+      },
+      "instruction_count": 449,
+      "expanded_count": 1627,
+      "op_counts": {
+        "F": 55,
+        "REP_INIT": 52,
+        "REP_ACC": 52,
+        "REP_FILL": 52,
+        "EXTRACT": 64,
+        "G": 55,
+        "H": 54,
+        "COPY": 52,
+        "SPC_INIT": 4,
+        "SPC_ACC": 4,
+        "SPC_FLIP": 4,
+        "END": 1
+      },
+      "rom_depth": 512,
+      "rom_sha256": "a3a9b627d0fb2dc373dcf4bf126541d727d83f25f12de810ea3b70d320d25a32"
+    }
+  }
+}
